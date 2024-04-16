@@ -52,22 +52,42 @@
 
             <section>
                 <h2>Cat Form</h2>
-                <fieldset>
-                    <legend>Is your cat an indoor or outdoor cat?</legend>
-                    <input>
-                </fieldset>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                        <label><input id="Indoor" value="Indoor" type="radio"
+                                name="indoor-outdoor">Indoor</label>
+                        <label><input id="Outdoor" value="Outdoor" type="radio"
+                                name="indoor-outdoor">Outdoor</label>
+                    </fieldset>
 
-                <fieldset>
-                    <legend></legend>
-                    <input>
-                </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality</legend>
 
-            </section>
+                        <input value="Loving" name="personality"
+                            id="Loving" type="checkbox"> <label
+                            for="Loving">Loving</label>
+                        <input value="Lazy" name="personality" id="Lazy"
+                            type="checkbox"> <label for="Lazy">Lazy</label>
+                        <input value="Energetic" name="personality"
+                            id="Energetic"
+                            type="checkbox"> <label
+                            for="Energetic">Energetic</label>
 
-        </main>
-        <footer>
+                    </fieldset>
+                    <input type="text" name="catphototurl"
+                        placeholder="cat photo URL" required>
+                    <button type="submit">Enviar</button>
+                </section>
 
-        </footer>
-    </body>
+            </main>
+            <footer>
+                <p>No Copyright - <a
+                        href="https://pbs.twimg.com/media/CQmU_v5UsAA4vmh.jpg">casa
+                        do caralho</a>
 
-</html>
+                </p>
+            </footer>
+        </body>
+
+    </html>

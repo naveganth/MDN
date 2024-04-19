@@ -3,19 +3,83 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe Menu</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o arquivo CSS externo -->
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="menu">
+    <!-- Container principal do menu -->
+    <div class="menu">
         <main>
+            <!-- Título do café -->
             <h1>CAMPER CAFE</h1>
-            <p>Est. 2020</p>
+            <!-- Ano de estabelecimento do café -->
+            <p class="established">Est. 2020</p>
+            <!-- Linha horizontal para separação visual -->
+            <hr>
+            <!-- Seção de cafés oferecidos -->
             <section>
                 <h2>Coffee</h2>
+                <!-- Imagem representativa para a seção de café -->
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon" />
+                <!-- Lista de cafés disponíveis -->
+                <article class="item">
+                    <p class="flavor">French Vanilla</p>
+                    <p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Caramel Macchiato</p>
+                    <p class="price">3.75</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Pumpkin Spice</p>
+                    <p class="price">3.50</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Hazelnut</p>
+                    <p class="price">4.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Mocha</p>
+                    <p class="price">4.50</p>
+                </article>
+            </section>
+            <!-- Seção de sobremesas oferecidas -->
+            <section>
+                <h2>Desserts</h2>
+                <!-- Imagem representativa para a seção de sobremesas -->
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon" />
+                <!-- Lista de sobremesas disponíveis -->
+                <article class="item">
+                    <p class="dessert">Donut</p>
+                    <p class="price">1.50</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p>
+                    <p class="price">2.75</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cheesecake</p>
+                    <p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p>
+                    <p class="price">2.50</p>
+                </article>
             </section>
         </main>
+        <!-- Linha horizontal no rodapé -->
+        <hr class="bottom-line">
+        <footer>
+            <!-- Link para o site do café -->
+            <p>
+                <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+            </p>
+            <!-- Endereço do café -->
+            <p class="address">123 Free Code Camp Drive</p>
+        </footer>
     </div>
 </body>
 

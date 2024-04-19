@@ -1,14 +1,116 @@
+/* Configurações gerais do corpo do documento */
 body {
-  /*
-  background-color: burlywood;
-  */
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /* Imagem de fundo */
+  font-family: sans-serif; /* Tipo de fonte genérica para todo o corpo */
+  padding: 20px; /* Espaçamento interno para o corpo inteiro */
 }
 
-h1, h2, p {
+/* Estilos para o cabeçalho principal (h1) */
+h1 {
+  font-size: 40px; /* Tamanho da fonte */
+  margin-top: 0; /* Margem superior */
+  margin-bottom: 15px; /* Margem inferior */
+}
+
+/* Estilos para os cabeçalhos secundários (h2) */
+h2 {
+  font-size: 30px; /* Tamanho da fonte */
+}
+
+/* Estilo para a data de estabelecimento */
+.established {
+  font-style: italic; /* Fonte em itálico */
+}
+
+/* Alinhamento de texto centralizado para h1, h2 e p */
+h1,
+h2,
+p {
   text-align: center;
 }
 
-#menu {
-  width: 300px;
-  background-color: burlywood;
+/* Estilos para o container do menu */
+.menu {
+  width: 80%; /* Largura relativa */
+  background-color: burlywood; /* Cor de fundo */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  padding: 20px; /* Espaçamento interno */
+  max-width: 500px; /* Largura máxima */
+}
+
+/* Estilos para imagens dentro do menu */
+img {
+  display: block; /* As imagens são blocos para aplicar margens automaticamente */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  margin-top: -25px; /* Margem superior negativa para sobrescrever o estilo */
+}
+
+/* Estilos para as linhas horizontais (hr) */
+hr {
+  height: 2px; /* Altura da linha */
+  background-color: brown; /* Cor de fundo da linha */
+  border-color: brown; /* Cor da borda da linha */
+}
+
+/* Linha horizontal adicional no rodapé */
+.bottom-line {
+  margin-top: 25px; /* Espaço acima da linha */
+}
+
+/* Fonte específica para h1 e h2 */
+h1,
+h2 {
+  font-family: Impact, serif; /* Tipo de fonte para títulos */
+}
+
+/* Estilos para parágrafos dentro de .item */
+.item p {
+  display: inline-block; /* Display como bloco, mas na mesma linha */
+  margin-top: 5px; /* Margem superior */
+  margin-bottom: 5px; /* Margem inferior */
+  font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Alinhamento e tamanho para descrições de itens e preços */
+.flavor,
+.dessert {
+  text-align: left; /* Alinhamento à esquerda */
+  width: 75%; /* Largura relativa */
+}
+
+.price {
+  text-align: right; /* Alinhamento à direita */
+  width: 25%; /* Largura relativa */
+}
+
+/* Estilos para o rodapé */
+footer {
+  font-size: 14px; /* Tamanho da fonte no rodapé */
+}
+
+/* Estilo adicional para o endereço no rodapé */
+.address {
+  margin-bottom: 5px; /* Margem inferior */
+}
+
+/* Estilos para links */
+a {
+  color: black; /* Cor do texto dos links */
+}
+
+/* Estilos para links visitados */
+a:visited {
+  color: black; /* Cor do texto para links visitados */
+}
+
+/* Estilos para links ao passar o mouse */
+a:hover {
+  color: brown; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para links clicados */
+a:active {
+  color: brown; /* Cor do texto quando o link está ativo */
 }
